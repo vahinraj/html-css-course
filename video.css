@@ -47,6 +47,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  padding-top: 60px;
 }
 .stats{
   margin-top: 4px;
