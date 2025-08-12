@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="video.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="sidebar.css">
   </head>
   <body style="font-family: 'Roboto', Arial, sans-serif;">
     <div class="header">
@@ -20,9 +21,11 @@
         <input type="text" placeholder="Search" class="search-box">
         <button  class="search">
           <img src="icons/search.svg" class="search-icon">
+          <div class="tooltip">Search</div>
         </button>
         <button  class="mic">
           <img src="icons/voice-search-icon.svg" class="mic-icon">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
@@ -30,64 +33,105 @@
           <img src="icons/plus.svg" class="plus">
           <button class="create-button">Create</button>
         </div>
-        <img src="icons/notifications.svg" class="notification">
+        <div class="notif-icon">
+          <img src="icons/notifications.svg" class="notification">
+          <div class="notif-count">9+</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        
         <img src="pix/vahin_pfp.jpg" class="vahin">
       </div>
       
     </div>
-    
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="sidebar-icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-icons/shorts-icon.svg">
+        <div>Shorts</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-icons/library.svg">
+        <div>Library</div>
+      </div>
+    </div>
     <div class="container">
-      <div class="preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="pix/hq720.avif">
-      </div>
-      <div class="video-info-grid">
-        <div class="pfp">
-        <img class="profile" src="pix/unnamed.jpg">
+      <a href="https://www.youtube.com/watch?v=46l2HlRQHk8" class="preview-link">
+        <div class="preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="pix/hq720.avif">
+            <div class="time">44:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="pfp">
+            <img class="profile" src="pix/unnamed.jpg">
+            </div>
+            <div class="info">
+            <p class="title">Breaking Bad's Most Iconic Scenes</p>
+            <p class="author">RottenTomatoes Tv</p>
+            <p class="stats">3.4M views &#183; 2 years ago</p>
+            </div>
+          </div>
         </div>
-        <div class="info">
-        <p class="title">Breaking Bad's Most Iconic Scenes</p>
-        <p class="author">RottenTomatoes Tv</p>
-        <p class="stats">3.4M views &#183; 2 years ago</p>
+      </a>
+      
+      <a href="https://www.youtube.com/watch?v=wNB6NgEmCM0" class="preview-link">
+          <div class="preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="pix/hq720 (1).avif">
+              <div class="time">24:48</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp">
+              <img class="profile" src="pix/unnamed2.jpg">
+              </div>
+              <div class="info">
+              <p class="title">Top 20 Breaking Bad Questions Answered in Better Call Saul</p>
+              <p class="author">WatchMojo.com</p>
+              <p class="stats">1.6M views &#183; 3 years ago</p>
+              </div>
+            </div>
+          </div>
+      </a>
+      
+      <a href="https://www.youtube.com/watch?v=AcGAB2hgkiI" class="preview-link">
+        <div class="preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="pix/t1.avif">
+            <div class="time">39:39</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="pfp">
+            <img class="profile" src="pix/pfp1.jpg">
+            </div>
+            <div class="info">
+            <p class="title">Disappear, Improve, Return and shock them all</p>
+            <p class="author">Hamza</p>
+            <p class="stats">118K views &#183; 2 weeks ago</p>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <div class="preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="pix/hq720 (1).avif">
-      </div>
-      <div class="video-info-grid">
-        <div class="pfp">
-        <img class="profile" src="pix/unnamed.jpg">
-        </div>
-        <div class="info">
-        <p class="title">Top 20 Breaking Bad Questions Answered in Better Call Saul</p>
-        <p class="author">WatchMojo.com</p>
-        <p class="stats">1.6M views &#183; 3 years ago</p>
-        </div>
-      </div>
-      </div>
-
-      <div class="preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="pix/t1.avif">
-      </div>
-      <div class="video-info-grid">
-        <div class="pfp">
-        <img class="profile" src="pix/pfp1.jpg">
-        </div>
-        <div class="info">
-        <p class="title">Disappear, Improve, Return and shock them all</p>
-        <p class="author">Hamza</p>
-        <p class="stats">118K views &#183; 2 weeks ago</p>
-        </div>
-      </div>
-      </div>
-
-      <div class="preview">
+      </a>
+      
+      <a href="https://www.youtube.com/watch?v=lom1D8raoA4" class="preview-link">
+        <div class="preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="pix/t2.avif">
+        <div class="time">2:25:19</div>
       </div>
       <div class="video-info-grid">
         <div class="pfp">
@@ -100,10 +144,13 @@
         </div>
       </div>
       </div>
-
-      <div class="preview">
+      </a>
+      
+      <a href="https://www.youtube.com/watch?v=pzBi1nwDn8U" class="preview-link">
+        <div class="preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="pix/t3.avif">
+        <div class="time">33:03</div>
       </div>
       <div class="video-info-grid">
         <div class="pfp">
@@ -116,10 +163,13 @@
         </div>
       </div>
       </div>
-
-      <div class="preview">
+      </a>
+      
+      <a href="https://www.youtube.com/watch?v=BmicBpOXPlc" class="preview-link">
+        <div class="preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="pix/t4.avif">
+        <div class="time">16:33</div>
       </div>
       <div class="video-info-grid">
         <div class="pfp">
@@ -132,7 +182,7 @@
         </div>
       </div>
       </div>
-      
+      </a>
     </div>
   </body>
 </html>
